@@ -13,14 +13,14 @@
     </div>
     <div class="valSerConvert">
         <h2>Digite o nome do tipo de moeda que será convertida</h2><br>
-        <input type="text" id="tipoMoeda" placeholder="Ex: 'EUR' ou 'BRL'">
+        <input type="text" id="tipoMoeda" placeholder="Ex: 'EUR' ou 'BRL'" maxlength="3" oninput="this.value = this.value.toUpperCase()">
         <h2>Digite o valor a ser convertido</h2>
-            <input type="number" id="valSeraConvert" placeholder="Digite o valor:">
+            <input type="number" id="valSeraConvert" placeholder="Digite o valor:" >
         </p>
     </div><br>
     <div class="moedaConversao">
         <h2>A conversão será para qual moeda?</h2><br>
-        <input type="text" id="moedaConversao" placeholder="Ex: 'EUR' ou 'BRL'"><br><br>
+        <input type="text" id="moedaConversao" placeholder="Ex: 'EUR' ou 'BRL'" maxlength="3" oninput="this.value = this.value.toUpperCase()"><br><br>
         <input type="button" value="Resultado" onclick="result()">
     </div><br>
     <div class="result">
