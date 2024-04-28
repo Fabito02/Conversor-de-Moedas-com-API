@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Conversor de Moedas</h1>
+    </div>
+    <div class="valSerConvert">
+        <h2>Digite o nome do tipo de moeda que será convertida</h2><br>
+        <input type="text" id="tipoMoeda" placeholder="Ex: 'EUR' ou 'BRL'">
+        <h2>Digite o valor a ser convertido</h2>
+            <input type="number" id="valSeraConvert" placeholder="Digite o valor:">
+        </p>
+    </div><br>
+    <div class="moedaConversao">
+        <h2>A conversão será para qual moeda?</h2><br>
+        <input type="text" id="moedaConversao" placeholder="Ex: 'EUR' ou 'BRL'"><br><br>
+        <input type="button" value="Resultado" onclick="result()">
+    </div><br>
+    <div class="result">
+        <h3 id="result"></h3>
+    </div>
+<script src="script.js"></script>
+</body> 
+
+</html>
